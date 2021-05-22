@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="room.css">
+
+</head>
+<body class="body_background">
+<div class="container">
+<center>
+		<h1 class="header">	
+			Kwitter	
+			<sup>
+				<img src="m2.png">
+			</sup>
+			</h1>
+			<h2 id="name_show" style="color: aqua;"></h2>
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#wel">
+			<img src="logo.png" class="img-responsive">
+			<hr>
+			<p class="text-primary">Click Here</p>
+			<div class="modal fade" id="wel">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Welcome To Kwitter</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="wel.jpg" class="img-responsive img_modal">
+                            <p class="p_modal">
+                             Welcome to Kwitter This is a web app designed to say bye-bye to boredom join a room with your friends or create one and share your thoughts and feelings through text.....
+							 why not try the magic for yourself ? :)
+                                <br>
+								</p>
+								</div>
+								</div>
+								</div>
+								</div>
+								</div>
+								
+		<h3 class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<input id="write_room" type="text" class="form-control" placeholder="Write Your Room Name">
+		</div>
+		<button class="btn btn-success" onclick="addRoom()">#Add Room</button>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+		<div id="output"></div>
+		<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	</center>
+</div>
+<script src="2.js"></script>
+</body>
+</html>
